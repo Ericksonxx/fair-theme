@@ -5,13 +5,14 @@
   </div>
   <!-- ============image and boxes hero============= -->
   <div class="row hero_row-main">
+    <!-- SLIDE SLIDER -->
     <div class="col-md-4 hero_row_boxes-main">
       <section class="splide" aria-label="Splide Basic HTML Example">
   		<div class="splide__track">
 			<ul class="splide__list">
-				<li class="splide__slide">Slide 01</li>
-				<li class="splide__slide">Slide 02</li>
-				<li class="splide__slide">Slide 03</li>
+              {% for products in section.settings.hero-slider-collection.products %}
+				<li class="splide__slide">{{ product.title }}</li>
+			  {% endfor %}
 			</ul>
   		</div>
 	 </section>
@@ -37,11 +38,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
 <script>
-var splide = new Splide( '.splide', {
-  type   : 'loop',
-  perPage: 3,
-  focus  : 'center',
-} );
+	var splide = new Splide( '.splide', {
+  		type   : 'loop',
+  		perPage: 3,
+  		focus  : 'center',
+	} );
 
 splide.mount();
 </script>
@@ -122,6 +123,11 @@ splide.mount();
     		"type": "image_picker",
     		"id": "hero-image",
     		"label": "Hero Image"
+  		},
+ 		{
+    		"type": "collection",
+            "id": "hero-slider-collection",
+            "label": "Chose Collection to show on slideshow"
   		}
 	],
 	"presets": [
