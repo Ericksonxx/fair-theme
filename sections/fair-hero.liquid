@@ -1,5 +1,7 @@
 <div class="hero_body">
-	<h1>{{ section.settings.hero-title}}</h1>
+	<h1 class="hero_title">{{ section.settings.hero-title}}</h1>
+  
+  
 
   
   
@@ -27,11 +29,17 @@
   }
 {% endschema %}
 
+
+
+
 {% stylesheet %}
 	.hero_body{
 		height:100vh;
 		width:100vw;
 		background-color:#fdf5df;
+	}
+	.hero_title{
+		font-size:2rem;
 	}
 
 
