@@ -1,13 +1,6 @@
 <div class="hero_body">
   <!-- ============title hero============= -->
   <div class="hero_title-main">
-    <div class="hero_social-banner">
-      <div class="hero_social-container">
-        <p>1</p>
-        <p>1</p>
-        <p>1</p>
-      </div>
-    </div>
   	<h1 class="hero_title">{{ section.settings.hero-title}}</h1>
   </div>
   <!-- ============image and boxes hero============= -->
@@ -27,6 +20,13 @@
     </div>
     
     <div class="col-md-8 hero_row_image-main">
+          <div class="hero_social-banner">
+      <div class="hero_social-container">
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+      </div>
+    </div>
       <div class="hero_img-container">{{ section.settings.hero-image | img_url: 'master' | img_tag | class: 'hero-img'}}</div>
     </div>
   </div>
