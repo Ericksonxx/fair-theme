@@ -5,8 +5,15 @@
   </div>
   <!-- ============image and boxes hero============= -->
   <div class="row hero_row-main">
-    <div class="col-md-6 hero_row_boxes-main"></div>
-    <div class="col-md-6 hero_row_image-main"></div>
+    <div class="col-md-4 hero_row_boxes-main">
+      <a>
+      	<div></div>
+      </a>
+    </div>
+    
+    <div class="col-md-8 hero_row_image-main">
+    
+    </div>
   </div>
   
   
@@ -17,6 +24,32 @@
 
 </div>
 
+
+
+
+
+
+
+{% stylesheet %}
+	.hero_body{
+		height:100vh;
+		width:100vw;
+		background-color:#fdf5df;
+	}
+	.hero_title-main{
+		padding: 5% 10% 5% 10%;
+	}
+	.hero_title{
+		font-size:5rem;
+	}
+	.row-main{
+		background-color:red;
+	}
+
+
+
+
+{% endstylesheet %}
 
 {% schema %}
   {
@@ -37,27 +70,6 @@
 	]
   }
 {% endschema %}
-
-
-
-
-{% stylesheet %}
-	.hero_body{
-		height:100vh;
-		width:100vw;
-		background-color:#fdf5df;
-	}
-	.hero_title-main{
-		padding: 5% 10% 5% 10%;
-	}
-	.hero_title{
-		font-size:5rem;
-	}
-
-
-
-
-{% endstylesheet %}
 
 {% javascript %}
 {% endjavascript %}
