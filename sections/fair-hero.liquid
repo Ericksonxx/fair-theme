@@ -12,7 +12,7 @@
     </div>
     
     <div class="col-md-8 hero_row_image-main">
-    {{ 'hero-placeholder.jpg' | asset_url | img_tag: 'Fair' }}
+     {{ settings.hero-image | img_url: 'master' | img_tag }}
     </div>
   </div>
   
@@ -64,7 +64,12 @@
      		"id": "hero-title",
       		"default": "Say what you feel with Fair",
       		"label": "Hero title"
-		}
+		},
+ 		{
+    		"type": "image_picker",
+    		"id": "hero-image",
+    		"label": "Hero Image"
+  		}
 	],
 	"presets": [
 		{
