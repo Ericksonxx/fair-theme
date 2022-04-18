@@ -1,5 +1,5 @@
 <div class="hero_body">
-	<p>HERE GOES HERE</p>
+	<h1>{{ section.settings.hero-title}}</h1>
 
   
   
@@ -10,7 +10,14 @@
 {% schema %}
   {
     "name": "Section name",
-    "settings": [],
+    "settings": [
+		{
+ 			"type": "text",
+     		"id": "hero-title",
+      		"default": "Say what you feel with Fair",
+      		"label": "Hero title"
+		}
+	],
 	"presets": [
 		{
 			"name": "Fair Hero",
