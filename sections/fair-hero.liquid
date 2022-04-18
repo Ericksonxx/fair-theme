@@ -11,7 +11,10 @@
   		<div class="splide__track">
 			<ul class="splide__list">
               {% for products in section.settings.hero-slider-collection.products %}
-				<li class="splide__slide">{{ product.title }}</li>
+				<li class="splide__slide">
+                  <p>{{ product.title }}</p>
+              	
+              	</li>
 			  {% endfor %}
 			</ul>
   		</div>
