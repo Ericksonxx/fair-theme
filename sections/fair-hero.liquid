@@ -12,7 +12,7 @@
     </div>
     
     <div class="col-md-8 hero_row_image-main">
-      {{ section.settings.hero-image | img_url: 'master' | img_tag | class: 'hero-img'}}
+      <div class="hero_img-container">{{ section.settings.hero-image | img_url: 'master' | img_tag | class: 'hero-img'}}</div>
     </div>
   </div>
   
@@ -48,6 +48,9 @@
 		padding-right:10%;
 		background-color:red;
 		height:50vh;
+	}
+	.hero_img-container img{
+		max-width:80%;
 	}
 
 
