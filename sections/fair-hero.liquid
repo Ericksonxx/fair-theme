@@ -1,4 +1,4 @@
-<div class="hero_body row" style="background:{{section.settings.background }}">
+<div class="hero_body row" style="background:{{section.settings.hero-background-image }}">
   <div class="hero_row row">
     <div class="col-md-6 hero_col-left" style="background:{{section.settings.background_col }}">
       <div class="hero_col-left-text">
@@ -56,6 +56,11 @@
   {
     "name": "Fair Hero",
     "settings": [
+		{
+			"type": "image_picker",
+			"id": "hero-background-image",
+			"label": "Hero background image"
+		},
 		{
 			"type": "color",
   			"id": "background",
