@@ -3,13 +3,15 @@
     "165028898596a5fa1d": {
       "type": "fair-hero",
       "settings": {
-        "hero-background-image": "shopify:\/\/shop_images\/hong-nguyen-FO-zQd7Wqio-unsplash.jpg",
+        "hero-background-image": "shopify:\/\/shop_images\/fashion-model-poses-with-scarf.jpg",
         "background": "#d62828",
         "background_col": "#ffffff",
         "hero-headline": "FAIR <br>THEME",
         "hero-subtitle": "The modern theme that makes your brand shine",
         "heading_font": "prompt_n8",
         "subtitle_font": "prompt_n6",
+        "hero_cta-text": "Shop now",
+        "hero_labeled-text": "\/\/TOP FASHION THEMES <br>NEXT GENERATION RETAIL QUALITY",
         "image": "shopify:\/\/shop_images\/fashion-model-poses-with-scarf.jpg"
       }
     },
