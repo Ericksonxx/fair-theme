@@ -10,7 +10,7 @@
         </p>
         <div class="hero_cta-container">
         	<a>
-          		<p class="hero_cta-text">{{section.settings.hero_cta-text}}</p>
+              <p class="hero_cta-text">{{section.settings.hero_cta-text}}<span><img class="hero_cta-icon" src="{{ section.settings.hero_cta-icon | img_url: '40x40' }}" /></span></p>
         	</a>
         </div>
         <div class="hero_labeled-container">
@@ -27,7 +27,6 @@
 </div>
 
 
-a
 
 
 {% stylesheet %}
@@ -126,6 +125,11 @@ h1{
 			"id": "hero_cta-text",
 			"label": "Call to action text",
 			"default": "Shop now"
+		},
+		{
+			"type": "image_picker",
+			"id": "hero_cta-icon",
+			"label": "Icon for CTA"
 		},
 		{
 			"type": "text",
