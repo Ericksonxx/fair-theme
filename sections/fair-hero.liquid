@@ -23,16 +23,16 @@
         <div class="hero_img-bottom" style="background:{{section.settings.background_col }}">
           <div class="row hero_img-bottom-content" style="background:{{section.settings.background_col }}">
             <div class="col-md-4">
-              <p>30</p>
-              <p>collections</p>
+              <p class="hero_img-bottom-number">30</p>
+              <p class="hero_img-bottom-noun">collections</p>
             </div>
             <div class="col-md-4">
-            	<p>250</p>
-              <p>products</p>
+            	<p class="hero_img-bottom-number">250</p>
+                <pclass="hero_img-bottom-noun">products</p>
             </div>
             <div class="col-md-4">
-            	<p>+560</p>
-              <p>clients</p>
+            	<p class="hero_img-bottom-number">+560</p>
+                <p class="hero_img-bottom-noun">clients</p>
             </div>
           </div>
         </div>
@@ -175,6 +175,19 @@
   		}
 
 	],
+"blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ],
 	"presets": [
 		{
 			"name": "Fair Hero",
