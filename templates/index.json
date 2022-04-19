@@ -3,9 +3,7 @@
     "165028898596a5fa1d": {
       "type": "fair-hero",
       "settings": {
-        "hero-title": "Say what you feel with Fair",
-        "hero-image": "shopify:\/\/shop_images\/hong-nguyen-FO-zQd7Wqio-unsplash.jpg",
-        "hero-slider-collection": "bracelets"
+        "background": "#d62828"
       }
     },
     "image_banner": {
