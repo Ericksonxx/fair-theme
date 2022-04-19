@@ -1,7 +1,12 @@
-<div class="hero_body" style="background:{{section.settings.background }}">
-  
-  
-
+<div class="hero_body row" style="background:{{section.settings.background }}">
+  <div class="hero_row row">
+    <div class="col-md-6 hero_col-left" style="background:{{section.settings.background_col }}">
+    
+    </div>
+    <div class="col-md-6">
+    
+    </div>
+  </div>
 </div>
 
 
@@ -9,7 +14,12 @@
 
 
 {% stylesheet %}
-.hero_body{height:100vh;}
+	.hero_body{
+		height:100vh;
+	}
+	.hero_col-left{
+		height:100vh;
+	}
 {% endstylesheet %}
 
 {% schema %}
@@ -19,6 +29,11 @@
 		{
 			"type": "color",
   			"id": "background",
+  			"label": "bg color"
+		},
+		{
+			"type": "color",
+  			"id": "background_col",
   			"label": "bg color"
 		}
 	],
