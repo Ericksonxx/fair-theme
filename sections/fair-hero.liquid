@@ -23,16 +23,16 @@
         <div class="hero_img-bottom" style="background:{{section.settings.background_col }}">
           <div class="row hero_img-bottom-content" style="background:{{section.settings.background_col }}">
             <div class="col-md-3">
-              <p class="hero_img-bottom-number">30</p>
-              <p class="hero_img-bottom-noun">collections</p>
+              <p class="hero_img-bottom-number">{{ section.settings.hero_record1-number }}</p>
+              <p class="hero_img-bottom-noun">{{ section.settings.hero_record1-noun }}</p>
             </div>
             <div class="col-md-3">
-            	<p class="hero_img-bottom-number">250</p>
-                <p class="hero_img-bottom-noun">products</p>
+            	<p class="hero_img-bottom-number">{{ section.settings.hero_record2-number }}</p>
+                <p class="hero_img-bottom-noun">{{ section.settings.hero_record2-noun }}</p>
             </div>
             <div class="col-md-3">
-            	<p class="hero_img-bottom-number">+560</p>
-                <p class="hero_img-bottom-noun">clients</p>
+            	<p class="hero_img-bottom-number">{{ section.settings.hero_record3-number }}</p>
+                <p class="hero_img-bottom-noun">{{ section.settings.hero_record3-noun }}</p>
             </div>
           </div>
         </div>
@@ -187,22 +187,45 @@ a
     		"type": "image_picker",
     		"id": "image",
     		"label": "Hero Image"
+  		},
+		{
+    		"type": "text",
+    		"id": "hero_record1-number",
+    		"label": "Number for record 1",
+			"default": "30"
+  		},
+		{
+    		"type": "text",
+    		"id": "hero_record1-noun",
+    		"label": "Noun for record 1",
+			"default": "collections"
+  		},
+		{
+    		"type": "text",
+    		"id": "hero_record2-number",
+    		"label": "Number for record 2",
+			"default": "30"
+  		},
+		{
+    		"type": "text",
+    		"id": "hero_record2-noun",
+    		"label": "Noun for record 2",
+			"default": "collections"
+  		},
+		{
+    		"type": "text",
+    		"id": "hero_record3-number",
+    		"label": "Number for record 3",
+			"default": "30"
+  		},
+		{
+    		"type": "text",
+    		"id": "hero_record3-noun",
+    		"label": "Noun for record 3",
+			"default": "collections"
   		}
 
 	],
-"blocks": [
-     {
-       "name": "Slide",
-       "type": "slide",
-       "settings": [
-         {
-           "type": "image_picker",
-           "id": "image",
-           "label": "Image"
-         }
-       ]
-     }
-   ],
 	"presets": [
 		{
 			"name": "Fair Hero",
