@@ -1,103 +1,17 @@
 <div class="hero_body">
-  <!-- ============title hero============= -->
-  <div class="hero_title-main">
-  	<h1 class="hero_title">{{ section.settings.hero-title}}</h1>
-  </div>
-  <!-- ============image and boxes hero============= -->
-  <div class="row hero_row-main">
-    <!-- SLIDE SLIDER -->
-    <div class="col-md-4 hero_row_boxes-main">
-      <section class="splide" data-splide-interval="1000">
-  		<div class="splide__track">
-			<ul class="splide__list">
-              {% for product in section.settings.hero-slider-collection.products %}
-				<li class="splide__slide">
-                  <img src="{{ product.featured_image | img_url: '200x200'}}" />
-              	
-              	</li>
-			  {% endfor %}
-			</ul>
-  		</div>
-	 </section>
-    </div>
-    
-    <div class="col-md-8 hero_row_image-main">
-      <div class="hero_img-container">{{ section.settings.hero-image | img_url: 'master' | img_tag | class: 'hero-img'}}</div>
-    <div class="hero_social-banner">
-      <div class="hero_social-container">
-        <p>1</p>
-        <p>1</p>
-        <p>3</p>
-      </div>
-    </div>
-    </div>
-  </div>
-  
   
   
 
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
-<script>
-	var splide = new Splide( '.splide', {
-  		type   : 'loop',
-  		perPage: 2,
-  		focus  : 'center',
-      autoplay: 'true',
-	} );
-
-splide.mount();
-</script>
 
 
 
 {% stylesheet %}
-	.hero_body{
-		height:100vh;
-		width:100vw;
-		background-color:#f5f5ec;
-	}
-	.hero_title-main{
-		padding: 5% 10% 5% 10%;
-	}
-	.hero_title{
-		font-size:5rem;
-	}
-	.hero_row-main{
-		margin-top:4vh;
-		padding-left:10%;
-		padding-right:10%;
-	}
-	.hero_img-container{
-		width:100%;
-		text-align:right;
-	}
-	.hero_img-container img{
-		max-width:60%;
-		max-height:60%;
-		border-radius:  0 30% 30% 30%;
-	}
-.splide{
-margin-top:150px;
+.hero_body{
+background-color: {{section.settings.background}}
 }
-	.hero_social-banner{
-		position:relative;
-	}
-	.hero_social-banner{
-		background-color:white;
-		position:absolute;
-		bottom:10%;
-		right:0;
-		width:50%;
-		border-radius: 30px 0% 0% 30px;
-	}
-
-
-
-
-
 {% endstylesheet %}
 
 {% schema %}
@@ -105,21 +19,10 @@ margin-top:150px;
     "name": "Fair Hero",
     "settings": [
 		{
- 			"type": "text",
-     		"id": "hero-title",
-      		"default": "Say what you feel with Fair",
-      		"label": "Hero title"
-		},
- 		{
-    		"type": "image_picker",
-    		"id": "hero-image",
-    		"label": "Hero Image"
-  		},
- 		{
-    		"type": "collection",
-            "id": "hero-slider-collection",
-            "label": "Chose Collection to show on slideshow"
-  		}
+			"type": "color",
+  			"id": "background",
+  			"label": "bg color"
+		}
 	],
 	"presets": [
 		{
