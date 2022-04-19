@@ -2,7 +2,8 @@
   <div class="hero_row row">
     <div class="col-md-6 hero_col-left" style="background:{{section.settings.background_col }}">
       <div class="hero_col-left-text">
-        <p class="hero_col-left-text-p">{{section.settings.hero-headline}}</p>
+        <p class="hero_col-left-text-title">{{section.settings.hero-headline}}</p>
+        <p class="hero_col-left-text-sub">{{section.settings.hero-subtitle}}</p>
       </div>
     </div>
     <div class="col-md-6">
@@ -28,8 +29,11 @@
 		margin-left:10%;
 		margin-right: 10%;
 	}
-	.hero_col-left-text-p{
+	.hero_col-left-text-title{
 		font-size: 8rem;
+	}
+	.hero_col-left-text-subtitle{
+		font-size: 5rem;
 	}
 {% endstylesheet %}
 
@@ -53,6 +57,12 @@
   			"id": "hero-headline",
   			"label": "Headline",
 			"default": "FAIR <br>THEME"
+		},
+		{
+			"type": "text",
+  			"id": "hero-subtitle",
+  			"label": "Headline",
+			"default": "The modern theme that makes your brand shine"
 		}
 	],
 	"presets": [
