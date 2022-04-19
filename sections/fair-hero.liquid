@@ -8,6 +8,9 @@
         <p class="hero_col-left-text-sub" style="font:{{section.settings.subtitle_font}}; color:transparent">
           {{section.settings.hero-subtitle}}
         </p>
+        <a>
+          <p class="hero_cta-text">{{section.settings.hero_cta-text}}</p>
+        </a>
       </div>
     </div>
     <div class="col-md-6 hero_col-right">
@@ -18,7 +21,7 @@
   </div>
 </div>
 
-a
+
 
 
 
@@ -101,6 +104,12 @@ h1{
   			"id": "subtitle_font",
   			"label": "Heading font",
   			"default": "prompt_n6"
+		},
+		{
+			"type": "text",
+			"id": "hero_cta-text",
+			"label": "Call to action text",
+			"default": "Shop now"
 		},
 		{
     		"type": "image_picker",
