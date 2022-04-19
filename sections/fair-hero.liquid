@@ -9,8 +9,8 @@
           {{section.settings.hero-subtitle}}
         </p>
         <div class="hero_cta-container">
-        	<a>
-              <p class="hero_cta-text">{{section.settings.hero_cta-text}}<span><img class="hero_cta-icon" src="{{ section.settings.hero_cta-icon | img_url: '40x40' }}" /></span></p>
+        	<a href="https://test-first1010.myshopify.com/collections/all">
+              <p class="hero_cta-text">{{section.settings.hero_cta-text}}<span><img class="hero_cta-icon" src="{{ section.settings.hero_cta-icon | img_url: '20x20' }}" /></span></p>
         	</a>
         </div>
         <div class="hero_labeled-container">
@@ -20,14 +20,29 @@
     </div>
     <div class="col-md-6 hero_col-right">
       <div class="hero_img-container">
-      		
+        <div class="hero_img-bottom" style="background:{{section.settings.background_col }}">
+          <div class="row hero_img-bottom-content" style="background:{{section.settings.background_col }}">
+            <div class="col-md-4">
+              <p class="hero_img-bottom-number">30</p>
+              <p class="hero_img-bottom-noun">collections</p>
+            </div>
+            <div class="col-md-4">
+            	<p class="hero_img-bottom-number">250</p>
+                <pclass="hero_img-bottom-noun">products</p>
+            </div>
+            <div class="col-md-4">
+            	<p class="hero_img-bottom-number">+560</p>
+                <p class="hero_img-bottom-noun">clients</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-a
 
+a
 
 {% stylesheet %}
 	.hero_body{
@@ -38,6 +53,7 @@ a
 	}
 	.hero_col-right{
 		height:90vh;
+background-size:contain;
 	}
 	.hero_col-left-text{
 		width:100%;
@@ -47,9 +63,9 @@ a
   		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
-}
-h1{
-  font-size: 55px;
+	}
+	h1{
+  		font-size: 55px;
 	}
 	.hero_col-left-text-title{
 		font-size: 10rem;
@@ -77,6 +93,26 @@ h1{
 		bottom:50px;
 		color:black;
 	}
+	.hero_cta-icon{
+		margin-left: 15px;
+	}
+	.hero_cta-text{
+		font-size:15px;
+	}
+	.hero_img-bottom{
+		position: absolute;
+        bottom: 0;
+		width:inherit;
+	}
+	.hero_img-bottom-content{
+		background-color:pink;
+		width:35%;
+		height:140px;
+	}
+.hero_img-bottom-number{
+		font-size:20px;
+margin-top:20px;
+}
 {% endstylesheet %}
 
 {% schema %}
@@ -147,6 +183,19 @@ h1{
   		}
 
 	],
+"blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ],
 	"presets": [
 		{
 			"name": "Fair Hero",
