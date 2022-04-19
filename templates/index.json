@@ -3,7 +3,13 @@
     "165028898596a5fa1d": {
       "type": "fair-hero",
       "settings": {
-        "background": "#d62828"
+        "background": "#d62828",
+        "background_col": "#ffffff",
+        "hero-headline": "FAIR <br>THEME",
+        "hero-subtitle": "The modern theme that makes your brand shine",
+        "heading_font": "prompt_n8",
+        "subtitle_font": "prompt_n6",
+        "image": "shopify:\/\/shop_images\/fashion-model-poses-with-scarf.jpg"
       }
     },
     "image_banner": {
