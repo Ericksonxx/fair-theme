@@ -12,7 +12,7 @@
     </div>
     <div class="col-md-6 hero_col-right">
       <div class="hero_img-container">
-      		{{section.settings.image}}
+      		{{section.settings.image | asset_url | img_tag: 'The Soap Store'}}
       </div>
     </div>
   </div>
