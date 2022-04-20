@@ -57,7 +57,7 @@
 	{% for product in section.settings.collection.products limit:3 %}
     <div class="fp_card-body col-md-3">
       <img class="img-fluid fp_card-img" src="{{ product.featured_image | img_url: '300x300', crop: 'center'  }}" />
-      <p class="fp_product-title">{{product.title}} | {{ product.price | money }}<span><img src="{{ section.settings.cta-icon| img_url: '20x20' }}" /></span></p>
+      <p class="fp_product-title">{{product.title}} | {{ product.price | money }}<span><img src="{{ section.settings.cta-icon | img_url: '20x20' }}" /></span></p>
     </div>
     {% endfor %}
   </div>
