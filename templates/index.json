@@ -25,7 +25,8 @@
     "1650396960842aedeb": {
       "type": "featured-collection",
       "settings": {
-        "collection": "bracelets"
+        "collection": "bracelets",
+        "fp_title-heading": "mono"
       }
     },
     "video": {
