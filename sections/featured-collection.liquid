@@ -48,9 +48,11 @@
 
 
 <div class="fp_section">
-  <ul>
+  <ul class="fp_ul-list">
 	{% for product in section.settings.collection.products %}
-    <li>{{product.title}}</li>
+    <li class="fp_card-body">
+      {{product.title}}
+    </li>
     {% endfor %}
   </ul>
 
