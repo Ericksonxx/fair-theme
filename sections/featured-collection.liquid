@@ -50,7 +50,7 @@
 <div class="fp_section">
   <div class="row fp_ul-list">
     <div class="col-md-3">
-      <h3 class="fp_collection-title">Hola</h3>
+      <h1 class="fp_collection-title">Hola</h1>
       <p class="fp_collection-description">lorem</p>
     </div>
 	{% for product in section.settings.collection.products limit:3 %}
@@ -72,14 +72,17 @@ a
 		margin-right:5%;
 		width:90%;
 	}
-.img-fluid{
-align-self:center;
-}
+	.img-fluid{
+		align-self:center;
+	}
 	.fp_ul-list li{
 		display:inline;
 	}
 	.fp_card-body{
 		padding:15px;
+	}
+	.fp_collection-title{
+		
 	}
 {% endstylesheet%}
 
@@ -97,6 +100,12 @@ align-self:center;
 		"type": "collection",
 		"id": "collection",
 		"label": "Choose featured collection"
+	},
+	{
+  		"type": "font_picker",
+  		"id": "fp_title-heading",
+  		"label": "Collection title font",
+  		"default": "harmonia_sans_n9"
 	}
   ],
   "presets": [
