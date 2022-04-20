@@ -51,7 +51,7 @@
   <div class="row fp_ul-list">
 	{% for product in section.settings.collection.products %}
     <div class="fp_card-body col-md-3">
-      <img src="{{ product.featured_image | img_url: '200x200' }}" />
+      <img class="img-fluid" src="{{ product.featured_image | img_url: '200x200' }}" />
       <p class="fp_product-title">{{product.title}}</p>
       <p class="fp_product-price">{{product.title}}</p>
     </div>
