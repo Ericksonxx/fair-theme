@@ -52,7 +52,7 @@
     <div class="col-md-4">
     	<h4>Hola<h4>
     </div>
-	{% for product in section.settings.collection.products %}
+	{% for product in section.settings.collection.products limit:3 %}
     <div class="fp_card-body col-md-3">
       <img class="img-fluid fp_card-img" src="{{ product.featured_image | img_url: '300x300', crop: 'center'  }}" />
       <p class="fp_product-title">{{product.title}}</p>
@@ -67,8 +67,8 @@
 
 {% stylesheet %}
 	.fp_section{
-		margin-left:0;
-		margin-right:0;
+		margin-left:5%;
+		margin-right:5%;
 		width:70%;
 	}
 	.fp_ul-list li{
