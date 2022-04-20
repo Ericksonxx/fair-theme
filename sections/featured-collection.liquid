@@ -52,7 +52,8 @@
 	{% for product in section.settings.collection.products %}
     <li class="fp_card-body">
       <img src="{{ product.featured_image | img_url: '200x200' }}" />
-      {{product.title}}
+      <p class="fp_product-title">{{product.title}}</p>
+      <p class="fp_product-price">{{product.title}}</p>
     </li>
     {% endfor %}
   </ul>
