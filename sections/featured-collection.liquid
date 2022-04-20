@@ -49,6 +49,9 @@
 
 <div class="fp_section">
   <div class="row fp_ul-list">
+    <div>
+    	<h4>Hola<h4>
+    </div>
 	{% for product in section.settings.collection.products %}
     <div class="fp_card-body col-md-3">
       <img class="img-fluid fp_card-img" src="{{ product.featured_image | img_url: '300x300', crop: 'center'  }}" />
