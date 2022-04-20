@@ -62,7 +62,7 @@
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
             {% for product in section.settings.collection.products %}
             <div>
-            	{{ product.feature_image | img_url: '200x200' }}
+            	<img src="{{ product.featured_image | img_url: '150x150' }}">
             </div>
             {% endfor %}
             
