@@ -48,36 +48,19 @@
 
 
 <div class="fp_section">
+  <ul>
 	{% for product in section.settings.collection.products %}
-  <p>{{ product.title }}</p>
+    <li>{{product.title}}</li>
     {% endfor %}
-
+  </ul>
 
 </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
 {% stylesheet %}
-	.fea_collection-view-link a{
-		text-decoration: none;
-		color: #808080;
-		font-size:15px;
-	}
-	.a:hover{
-		text-decoration: none;
-		color: #c4c4c4;
-		font-size:15px;
-	}
+	.
 {% endstylesheet%}
 
 
