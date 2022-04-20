@@ -50,13 +50,13 @@
 <div class="fp_section">
   <div class="row fp_ul-list">
     <div class="col-md-3">
-      <h1 class="fp_collection-title">Hola</h1>
+      <h1 class="fp_collection-title" style="font-family: {{section.settings.fp_title-heading}}">Hola</h1>
       <p class="fp_collection-description">lorem</p>
     </div>
 	{% for product in section.settings.collection.products limit:3 %}
     <div class="fp_card-body col-md-3">
       <img class="img-fluid fp_card-img" src="{{ product.featured_image | img_url: '300x300', crop: 'center'  }}" />
-      <p class="fp_product-title" style="font-family: {{section.settings.fp_title-heading}}">{{product.title}}</p>
+      <p class="fp_product-title">{{product.title}}</p>
       <p class="fp_product-price">{{product.title}}</p>
     </div>
     {% endfor %}
