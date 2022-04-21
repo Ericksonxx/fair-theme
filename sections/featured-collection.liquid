@@ -58,6 +58,7 @@
     <div class="fp_card-body col-md-3">
 		<img class="img-fluid" src="{{ product.featured_image | img_url: '300x300', crop: 'center'}}"/>
       	<p>{{product.title}}</p>
+      <p>{{ producto.price | money }}</p>
   <div class="row"></div>
   
     </div>
