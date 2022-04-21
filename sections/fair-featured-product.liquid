@@ -1,7 +1,7 @@
 <div class="f-p_section">
   <div class="f-p_container row">
-    <div class="col-md-8">
-    	<img class="img-fluid" src="{{ section.settings.product.featured_image | crop: 'center'  }}" />
+    <div class="col-md-8 f-p_image">
+    	<img class="img-fluid" src="{{ section.settings.product.featured_image | img_url: '500x500', crop: 'center'  }}" />
     </div>
     <div class="col-md-4">
     	<h1>{{section.settings.product.title}}<h1>
@@ -31,6 +31,9 @@
 {% endschema %}
 
 {% stylesheet %}
+    .f-p_image{
+    	background-image: url("{{section.settings.product.featured_image}}")
+    }
 {% endstylesheet %}
 
 {% javascript %}
