@@ -4,14 +4,14 @@
 
     </div>
     <div class="col-md-4">
-      <h1>{{section.settings.product.title}}l</h1>
+      <h1>{{section.settings.product.title}}</h1>
     </div>
   </div>
 </div>
 
 {% stylesheet %}
     .f-p_image{
-    	background-image: url({{section.settings.product.featured_image}});ß
+    	background: url({{ section.settings.product.featured_image | asset_url }});
     }
 {% endstylesheet %}
 
