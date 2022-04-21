@@ -3,12 +3,12 @@
     <div class="col-md-8 f-p_image">
 <img class="img-fluid f-p_image"src="{{ section.settings.product.featured_image | img_url: '900x900', crop: 'center'}}"/>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 f-p_text">
       <h1>{{section.settings.product.title}}</h1>
     </div>
   </div>
 </div>
-
+a
 
 {% stylesheet %}
 	.f-p_image{
@@ -17,6 +17,8 @@
 	}
 	.f-p_image img{
 		width:90%;
+	}
+	.f-p_text{
 		background-color:blue;
 	}
 {% endstylesheet %}
