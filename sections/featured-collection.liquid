@@ -58,6 +58,10 @@
     <div class="fp_card-body col-md-3">
       <img class="img-fluid fp_card-img" src="{{ product.featured_image | img_url: '300x300', crop: 'center'  }}" />
       <p class="fp_product-title">{{product.title}} | {{ product.price | money }}</p>
+              <form method="post" action="/cart/add">
+  			<input name="id" value="{{ product.variants.first.id }}" type="hidden" />
+  			<input name="add" value="ORDER NOW" type="submit" />
+		</form>
     </div>
     {% endfor %}
   </div>
