@@ -1,21 +1,22 @@
 <div class="f-p_section">
   <div class="f-p_container row">
     <div class="col-md-8 f-p_image">
-<img class="img-fluid f-p_image"src="{{ section.settings.product.featured_image | img_url: '900x900' , crop: 'center'}}"/>
+<img class="img-fluid f-p_image"src="{{ section.settings.product.featured_image | img_url: '900x900', crop: 'center'}}"/>
     </div>
     <div class="col-md-4">
       <h1>{{section.settings.product.title}}</h1>
     </div>
   </div>
 </div>
-
+a
 {% stylesheet %}
 	.f-p_image{
 		padding-left:5%;
 		padding-right:5%;
 	}
 	.f-p_image img{
-		width:90%;;
+		width:90%;
+		background-color:blue;
 	}
 {% endstylesheet %}
 
