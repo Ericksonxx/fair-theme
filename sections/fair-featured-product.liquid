@@ -4,12 +4,16 @@
 
     </div>
     <div class="col-md-4">
-      <h1>{{section.settings.product.title}}</h1>
+      <h1>{{section.settings.product.title}}l</h1>
     </div>
   </div>
 </div>
 
-a
+{% stylesheet %}
+    .f-p_image{
+    	background-image: url({{section.settings.product.featured_image}});ß
+    }
+{% endstylesheet %}
 
 {% schema %}
   {
@@ -30,11 +34,7 @@ a
   }
 {% endschema %}
 
-{% stylesheet %}
-    .f-p_image{
-    	background-image: url({{section.settings.product.featured_image}});ß
-    }
-{% endstylesheet %}
+
 
 {% javascript %}
 {% endjavascript %}
