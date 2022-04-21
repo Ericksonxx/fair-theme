@@ -57,7 +57,10 @@
 	{% for product in section.settings.collection.products limit:3 %}
     <div class="fp_card-body col-md-3">
 		<img class="img-fluid" src="{{ product.featured_image | img_url: '300x300', crop: 'center'}}"/>
-
+      	<p>{{product.title}}</p>
+  <div class="row"></div>
+  
+    </div>
     {% endfor %}
   </div>
 </div>
