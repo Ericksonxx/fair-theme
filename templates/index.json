@@ -28,10 +28,17 @@
         "collection": "bracelets",
         "cta-icon": "shopify:\/\/shop_images\/right-arrow.png"
       }
+    },
+    "1650556733a15adbc1": {
+      "type": "fair-featured-product",
+      "settings": {
+        "product": "chain-bracelet"
+      }
     }
   },
   "order": [
     "165028898596a5fa1d",
-    "1650396960842aedeb"
+    "1650396960842aedeb",
+    "1650556733a15adbc1"
   ]
 }
