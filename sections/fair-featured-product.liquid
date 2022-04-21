@@ -6,15 +6,17 @@
     <div class="col-md-4 f-p_text">
       <p class="f-p_text-title">{{section.settings.product.title}}</p>
       <p class="f-p_text-description">{{section.settings.product.description}}</p>
-      <div class="col-md-6"><p class="f-p_text-price">{{ section.settings.product.price | money }}</p></div>
-      <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6"><p class="f-p_text-price">
+          <p>{{ section.settings.product.price | money }}</p>
+        </div>
+        <div class="col-md-6">
         {% assign product = section.settings.product %}
         <form method="post" action="/cart/add">
   			<input name="id" value="{{ product.variants.first.id }}" type="hidden" />
   			<input name="add" value="ORDER NOW" type="submit" />
 		</form>
-        
-
+      </div>
       </div>
     </div>
   </div>
