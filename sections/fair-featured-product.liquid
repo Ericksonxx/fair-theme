@@ -8,7 +8,16 @@
       <p class="f-p_text-description">{{section.settings.product.description}}</p>
       <div class="col-md-6"><p class="f-p_text-price">{{ section.settings.product.price | money }}</p></div>
       <div class="col-md-6">
-      
+      {% if product.available == false %}
+    <span>Out of Stock</span>
+{% elsif product.has_only_default_variant %}
+    <form method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+        <input type="submit" value="Add to Basket" class="button ajax-submit action_button button--add-to-cart" />
+    </form>
+{% else %}
+    <a href="{{ product.url }}">Choose option</a>
+{% endif %}
       </div>
     </div>
   </div>
