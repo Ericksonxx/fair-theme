@@ -9,10 +9,7 @@
       <div class="col-md-6"><p class="f-p_text-price">{{ section.settings.product.price | money }}</p></div>
       <div class="col-md-6">
 
-    <form method="post" action="/cart/add">
-        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-        <input type="submit" value="Add to Basket" class="button ajax-submit action_button button--add-to-cart" />
-    </form>
+
 
       </div>
     </div>
